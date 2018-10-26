@@ -1,26 +1,26 @@
 # doccano
 
-doccano is an open source text annotation tool for human. It provides annotation features for text classification, sequence labeling and sequence to sequence. So, you can create labeled data for sentiment analysis, named entity recognition, text summarization and so on. Just create project, upload data and start annotation. You can build dataset in hours.
+doccano is an open source text annotation tool for humans. It provides annotation features for text classification, sequence labeling and sequence to sequence translation. With these features, you can create labeled data for sentiment analysis, named entity recognition, text summarization, and so on. Just create a project, upload some data and start annotating. You can build a dataset in hours.
 
 ## Demo
 
-You can enjoy [annotation demo](http://doccano.herokuapp.com).
+You can enjoy the [annotation demo](http://doccano.herokuapp.com).
 
 ### [Named entity recognition](https://doccano.herokuapp.com/demo/named-entity-recognition/)
 
-First demo is one of the sequence labeling tasks, named-entity recognition. You just select text spans and annotate it. Since doccano supports shortcut key, so you can quickly annotate text spans.
+The first demo is one of the sequence labeling tasks, named-entity recognition. You just select text spans and annotate them. doccano supports shortcut keys, so you can annotate text spans quickly.
 
 ![Named Entity Recognition](./docs/named_entity_annotation.gif)
 
-### [Sentiment analysis](https://doccano.herokuapp.com/demo/text-classification/)
+### [Text classification](https://doccano.herokuapp.com/demo/text-classification/)
 
-Second demo is one of the text classification tasks, topic classification. Since there may be more than one category, you can annotate multi-labels.
+The second demo is for text classification. Since there may be more than one category, you can annotate with multiple labels. This can also be used for sentiment analysis by creating positive/negative labels.
 
 ![Text Classification](./docs/text_classification.gif)
 
 ### [Machine translation](https://doccano.herokuapp.com/demo/translation/)
 
-Final demo is one of the sequence to sequence tasks, machine translation. Since there may be more than one responses in sequence to sequence tasks, you can create multi responses.
+The final demo is one of the sequence to sequence tasks, machine translation. Since there may be more than one responses in sequence to sequence tasks, you can create multiple responses.
 
 ![Machine Translation](./docs/translation.gif)
 
@@ -83,7 +83,7 @@ Let’s start the development server and explore it.
 If the server is not running start it like so:
 
 ```bash
-$ python manage.py runserver
+$ python manage.py runserver 8080
 ```
 
 Now, open a Web browser and go to <http://127.0.0.1:8080/login/>. You should see the login screen:
@@ -102,11 +102,11 @@ To create your project, make sure you’re in the project list page and select `
 
 <img src="./docs/create_project.png" alt="Project Creation" width=400>
 
-In project creation, you can select three project types: text classificatioin, sequence labeling and sequence to sequence. You should select a type with your purpose.
+In project creation, you can select three project types: text classification, sequence labeling, or sequence to sequence.
 
 ### Import text items
 
-Now that we’ve created a project. Now you’re at the “dataset” page for the project. This page displays all the documents in the project. You can see there is no documents.
+We have now created a project. Now you’re at the “dataset” page for the project. This page displays all the documents in the project. You can see there are no documents.
 
 To import text items, select `Import Data` button in the navigation bar. You should see the following screen:
 
@@ -121,7 +121,7 @@ He lives in Newark, Ohio.
 ...
 ```
 
-Once you select a csv file on your computer, select `Upload` button.
+Once you select a txt file on your computer, select `Upload` button.
 
 ### Define labels
 
